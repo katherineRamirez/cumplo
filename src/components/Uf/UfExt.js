@@ -1,9 +1,11 @@
 import React, { Component } from 'react'; 
 import { Table } from 'react-bootstrap';
+import App from './../../App';
 import './Uf.css';
 
+
 const Data = ( props ) =>(
-	<Table responsive striped bordered condensed hover className="table">
+	<Table striped bordered condensed hover className="table">
 		<thead>
 	    <tr>
 	      <th><strong>Valor</strong></th>
@@ -19,6 +21,8 @@ const Data = ( props ) =>(
 	</Table>
 )
 
+
+
 class UfExt extends React.Component {
   constructor(props) {
     super(props)
@@ -27,6 +31,8 @@ class UfExt extends React.Component {
     ufsExt:[]
     }
   }
+
+
 	componentWillMount(){
     fetch('https://api.sbif.cl/api-sbifv3/recursos_api/uf/2010/01?apikey=1cf99506c7710442f9f3c30e6143653d053f7d9e&formato=json&callback=despliegue')
       .then(response => response.json())
@@ -43,11 +49,13 @@ class UfExt extends React.Component {
 
   }
 
-    render(){        
+
+
+    render(){  
       console.log( this.state.ufsExt.length )
     		if( this.state.ufsExt.length > 0 ){
       return(
-        <div>
+        <div id="uf">
           { this.state.ufsExt.map(resp => <Data Valor={resp.Valor} Fecha={resp.Fecha}/>) }
         </div>
       )  

@@ -16,20 +16,20 @@ class App extends Component {
         <Navigation></Navigation>
         <Header></Header>
           <h2>UF 2018</h2>
-        <Uf id="uf"></Uf>
+        <Uf></Uf>
         <Grid>
           <Row className="grid">
             <Col xs={6} md={6}>
               <label>
                 Fecha inicial:
-                <input type="text" ref={this.input} />
+                <input id="ufInicial" type="text" placeholder="Ej. 01-2010" ref={this.input} />
                 <input type="submit" value="Buscar" />
               </label>
             </Col>
             <Col xs={6} md={6}>
               <label>
                 Fecha final:
-                <input type="text" ref={this.input} />
+                <input id="ufFinal" type="text" placeholder="Ej. 01-2010" ref={this.input} />
                 <input type="submit" value="Buscar" />
               </label>
             </Col>
@@ -37,20 +37,20 @@ class App extends Component {
         </Grid>
          <UfExt></UfExt>
           <h2>DOLAR</h2>
-        <Dolar id="dolar"></Dolar>
+        <Dolar></Dolar>
         <Grid>
           <Row className="grid">
             <Col xs={6} md={6}>
               <label>
                 Fecha inicial:
-                <input type="text" ref={this.input} />
+                <input id="dolarInicial" type="text" placeholder="Ej. 01-2010" ref={this.input} />
                 <input type="submit" value="Buscar" />
               </label>
             </Col>
             <Col xs={6} md={6}>
               <label>
                 Fecha final:
-                <input type="text" ref={this.input} />
+                <input id="dolarFinal" type="text" placeholder="Ej. 01-2010" ref={this.input} />
                 <input type="submit" value="Buscar" />
               </label>
             </Col>

@@ -3,7 +3,7 @@ import { Table } from 'react-bootstrap';
 import './Dolar.css';
 
 const Dato = ( props ) =>(
-	<Table responsive striped bordered condensed hover className="table">
+	<Table striped bordered condensed hover className="table">
 		<thead>
 	    <tr>
 	      <th><strong>Valor</strong></th>
@@ -47,7 +47,7 @@ class DolarExt extends React.Component {
       console.log( this.state.dolarExt.length )
     		if( this.state.dolarExt.length > 0 ){
       return(
-        <div>
+        <div id="dolar">
           { this.state.dolarExt.map(resp => <Dato Valor={resp.Valor} Fecha={resp.Fecha}/>) }
         </div>
       )  

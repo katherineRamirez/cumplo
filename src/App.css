@@ -31,3 +31,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    h2{
+      text-align: center;
+    }
+}

@@ -18,3 +18,16 @@ h3{
 	margin-left: 30em;
 	width: 50%;
 }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    h3, h5{
+      text-align: center;
+    }
+    #uf .table{
+    	margin-left: 2em;
+    	width: 60%;
+    }
+}
