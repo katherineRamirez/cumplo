@@ -22,15 +22,15 @@ class App extends Component {
             <Col xs={6} md={6}>
               <label>
                 Fecha inicial:
-                <input id="ufInicial" type="text" placeholder="Ej. 01-2010" ref={this.input} />
-                <input type="submit" value="Buscar" />
+                <p><input id="ufInicial" type="text" placeholder="Ej. 01-2010" ref={this.input} /></p>
+                <p><input type="submit" value="Buscar" /></p>
               </label>
             </Col>
             <Col xs={6} md={6}>
               <label>
                 Fecha final:
-                <input id="ufFinal" type="text" placeholder="Ej. 01-2010" ref={this.input} />
-                <input type="submit" value="Buscar" />
+                <p><input id="ufFinal" type="text" placeholder="Ej. 01-2010" ref={this.input} /></p>
+                <p><input type="submit" value="Buscar" /></p>
               </label>
             </Col>
           </Row>
@@ -43,15 +43,15 @@ class App extends Component {
             <Col xs={6} md={6}>
               <label>
                 Fecha inicial:
-                <input id="dolarInicial" type="text" placeholder="Ej. 01-2010" ref={this.input} />
-                <input type="submit" value="Buscar" />
+                <p><input id="dolarInicial" type="text" placeholder="Ej. 01-2010" ref={this.input} /></p>
+                <p><input type="submit" value="Buscar" /></p>
               </label>
             </Col>
             <Col xs={6} md={6}>
               <label>
                 Fecha final:
-                <input id="dolarFinal" type="text" placeholder="Ej. 01-2010" ref={this.input} />
-                <input type="submit" value="Buscar" />
+                <p><input id="dolarFinal" type="text" placeholder="Ej. 01-2010" ref={this.input} /></p>
+                <p><input type="submit" value="Buscar" /></p>
               </label>
             </Col>
           </Row>

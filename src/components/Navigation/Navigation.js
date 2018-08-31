@@ -8,7 +8,7 @@ import './Navigation.css'
 class Navigation extends React.Component {
 	render() {
 		return (
-			<Navbar collapseOnSelect className="containerNav">
+			<Navbar collapseOnSelect>
   			<Navbar.Header>
    			 <Navbar.Brand>
       		<a href="#home"><img className='logo' src={logoCumplo}/></a>

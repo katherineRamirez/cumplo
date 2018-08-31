@@ -18,4 +18,9 @@ a{
     .logo{
     	width: 60%;
     }
+    .navbar-toggle{
+        position: relative;
+        bottom: 2.5em;
+    }
+ 
 }
