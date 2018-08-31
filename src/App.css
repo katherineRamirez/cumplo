@@ -7,6 +7,11 @@
   height: 15vh;
   background-color: #00ba68 !important;
 }
+.grid{
+  margin-top: 2.5em;
+  margin-left: 0.30em;
+}
+
 .App-header {
   background-color: #222;
   height: 150px;
