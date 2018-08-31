@@ -1,0 +1,12 @@
+.logo{
+	width: 100%;
+	height: auto;
+}
+
+a{
+	color: #fff !important;
+	font-size: 1.1em !important;
+}
+.navbar-nav{
+	margin: 1em 2em;
+}

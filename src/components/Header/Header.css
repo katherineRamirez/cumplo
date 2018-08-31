@@ -1,0 +1,14 @@
+.containerHeader{
+	background-color: transparent !important;
+	width: 100%;
+	height: 100%;
+}
+.imgHeader{
+	width: 100%;
+	height: 100%;
+	opacity: .67;
+}
+.navbar-default{
+	margin: 0;
+	padding: 0;
+}
