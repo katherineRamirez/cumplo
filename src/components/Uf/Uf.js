@@ -25,14 +25,12 @@ class Uf extends React.Component{
             Valor:resp.Valor,
             Fecha:resp.Fecha
           }          
-          console.log( data )
           this.setState({ ufs:this.state.ufs.concat([data]) }) 
         })
     })
 
   }
   render(){
-    console.log( this.state.ufs.length )
     if( this.state.ufs.length > 0 ){
       return(
         <div>

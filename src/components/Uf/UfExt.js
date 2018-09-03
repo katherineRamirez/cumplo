@@ -1,8 +1,7 @@
 import React, { Component } from 'react'; 
 import { Table } from 'react-bootstrap';
-import App from './../../App';
+import InputUf from './InputUf';
 import './Uf.css';
-
 
 const Data = ( props ) =>(
 	<Table striped bordered condensed hover className="table">
@@ -26,7 +25,6 @@ const Data = ( props ) =>(
 class UfExt extends React.Component {
   constructor(props) {
     super(props)
-    this.input = React.createRef();
     this.state = {
     ufsExt:[]
     }
@@ -42,7 +40,6 @@ class UfExt extends React.Component {
             Valor:resp.Valor,
             Fecha:resp.Fecha
           }          
-          console.log( data )
           this.setState({ ufsExt:this.state.ufsExt.concat([data]) }) 
         })
     })
@@ -50,14 +47,14 @@ class UfExt extends React.Component {
   }
 
 
-
     render(){  
-      console.log( this.state.ufsExt.length )
+    
     		if( this.state.ufsExt.length > 0 ){
       return(
         <div id="uf">
           { this.state.ufsExt.map(resp => <Data Valor={resp.Valor} Fecha={resp.Fecha}/>) }
         </div>
+
       )  
     }
     	return(

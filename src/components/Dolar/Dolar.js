@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './Dolar.css';
 
 const Dato = ( props ) =>(
-	<li>
-		<h3>{props.Valor}</h3>
-		<h5>{props.Fecha}</h5>
-	</li>
+  <li>
+    <h3>{props.Valor}</h3>
+    <h5>{props.Fecha}</h5>
+  </li>
 )
 
 class Dolar extends React.Component{

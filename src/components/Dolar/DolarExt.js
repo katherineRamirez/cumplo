@@ -22,7 +22,6 @@ const Dato = ( props ) =>(
 class DolarExt extends React.Component {
   constructor(props) {
     super(props)
-    this.input = React.createRef();
     this.state = {
     dolarExt:[]
     }
@@ -36,7 +35,6 @@ class DolarExt extends React.Component {
             Valor:resp.Valor,
             Fecha:resp.Fecha
           }          
-          console.log( dato )
           this.setState({ dolarExt:this.state.dolarExt.concat([dato]) }) 
         })
     })
@@ -44,7 +42,7 @@ class DolarExt extends React.Component {
   }
 
     render(){        
-      console.log( this.state.dolarExt.length )
+     
     		if( this.state.dolarExt.length > 0 ){
       return(
         <div id="dolar">
